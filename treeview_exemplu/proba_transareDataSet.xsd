@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="proba_transareDataSet" targetNamespace="http://tempuri.org/proba_transareDataSet.xsd" xmlns:mstns="http://tempuri.org/proba_transareDataSet.xsd" xmlns="http://tempuri.org/proba_transareDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="proba_transareConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="proba_transareConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.treeview_exemplu.Properties.Settings.GlobalReference.Default.proba_transareConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AsociatiiTableAdapter" GeneratorDataComponentClassName="AsociatiiTableAdapter" Name="Asociatii" UserDataComponentName="AsociatiiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="proba_transareConnectionString (Settings)" DbObjectName="proba_transare.dbo.Asociatii" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT denumire FROM dbo.Asociatii</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="proba_transareDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="proba_transareDataSet" msprop:Generator_UserDSName="proba_transareDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Asociatii" msprop:Generator_TableClassName="AsociatiiDataTable" msprop:Generator_TableVarName="tableAsociatii" msprop:Generator_TablePropName="Asociatii" msprop:Generator_RowDeletingName="AsociatiiRowDeleting" msprop:Generator_RowChangingName="AsociatiiRowChanging" msprop:Generator_RowEvHandlerName="AsociatiiRowChangeEventHandler" msprop:Generator_RowDeletedName="AsociatiiRowDeleted" msprop:Generator_UserTableName="Asociatii" msprop:Generator_RowChangedName="AsociatiiRowChanged" msprop:Generator_RowEvArgName="AsociatiiRowChangeEvent" msprop:Generator_RowClassName="AsociatiiRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
